@@ -69,6 +69,7 @@ Rest API Response
     {
         "status": "success",
         "code": "200",
+        "message": "The item was updated successfully"
         "data": {
             "name": "Item 1"
         }
