@@ -58,7 +58,7 @@ Rest API Response
         "message": "The item was created successfully"
     }
 ```
-4- PATCH - Update an item - HTTP Response Code: **200/204** 
+4- PATCH - Update an item - HTTP Response Code: **200** 
 
 > If updated entity is to be sent after the update
 
@@ -73,5 +73,16 @@ Rest API Response
         "data": {
             "name": "Item 1"
         }
+    }
+```
+5- DELETE - Delete an item - HTTP Response Code: **200**
+```javascript
+    HTTP/1.1  200
+    Content-Type: application/json
+ 
+    {
+        "status": "success",
+        "code": "200",
+        "message": "The item was deleted successfully"
     }
 ```
