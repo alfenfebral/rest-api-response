@@ -88,24 +88,26 @@ Rest API Response
 ```
 
 ## Rest API Error Responses
-1- GET/DELETE - HTTP Response Code: **404**
+1- GET/POST/PATCH/DELETE - HTTP Response Code: **404**
 
 ```javascript
     HTTP/1.1  404
     Content-Type: application/json
  
     {
-        "status": "fail",
-        "code": "200",
+        "status": "error",
+        "code": "404",
         "message": "The item does not exist"
     }
 ```
-2- POST -  HTTP Response Code: **400**
+2- POST/PATCH -  HTTP Response Code: **400**
 ```javascript
     HTTP/1.1  400
     Content-Type: application/json
     
     {
+        "status": "error",
+        "code": "400",
         "message": "Validation errors in your request", /* skip or optional error message */
         "errors": [
             {
@@ -119,5 +121,71 @@ Rest API Response
                 "field": "phoneNumber"
             }
         ]
+    }
+```
+3- VERB Unauthorized - HTTP Response Code: **401**
+```javascript
+    HTTP/1.1  401
+    Content-Type: application/json
+ 
+    {
+        "status": "error",
+        "code": "401",
+        "message": "Authentication credentials were missing or incorrect"
+    }
+```
+4- VERB Forbidden - HTTP Response Code: **403**
+```javascript
+    HTTP/1.1  403
+    Content-Type: application/json
+ 
+    {
+        "status": "error",
+        "code": "401",
+        "message": "The request is understood, but it has been refused or access is not allowed"
+    }
+```
+5- VERB Conflict - HTTP Response Code: **409**
+```javascript
+    HTTP/1.1  409
+    Content-Type: application/json
+ 
+    {
+        "status": "error",
+        "code": "409",
+        "message": "Any message which should help the user to resolve the conflict"
+    }
+```
+6- VERB Too Many Requests - HTTP Response Code: **429**
+```javascript
+    HTTP/1.1  429
+    Content-Type: application/json
+ 
+    {
+        "status": "error",
+        "code": "429",
+        "message": "The request cannot be served due to the rate limit having been exhausted for the resource"
+    }
+```
+7- VERB Internal Server Error - HTTP Response Code: **500**
+```javascript
+    HTTP/1.1  500
+    Content-Type: application/json
+ 
+    {
+        "status": "error",
+        "code": "500",
+        "message": "Something is broken"
+    }
+```
+8- VERB Service Unavailable - HTTP Response Code: **503**
+```javascript
+    HTTP/1.1  503
+    Content-Type: application/json
+ 
+    {
+        "status": "error",
+        "code": "503",
+        "message": "The server is up, but overloaded with requests. Try again later!"
     }
 ```
