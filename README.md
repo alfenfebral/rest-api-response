@@ -46,3 +46,15 @@ Rest API Response
         ]
     }
 ```
+3- POST - Create a new item - HTTP Response Code: **201**
+```javascript
+    HTTP/1.1  201
+    Location: /v1/items/12
+    Content-Type: application/json
+ 
+    {
+        "status": "success",
+        "code": "200",
+        "message": "The item was created successfully"
+    }
+```
