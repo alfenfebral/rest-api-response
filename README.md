@@ -86,3 +86,5 @@ Rest API Response
         "message": "The item was deleted successfully"
     }
 ```
+
+## Rest API Error Responses
