@@ -88,3 +88,36 @@ Rest API Response
 ```
 
 ## Rest API Error Responses
+1- GET/DELETE - HTTP Response Code: **404**
+
+```javascript
+    HTTP/1.1  404
+    Content-Type: application/json
+ 
+    {
+        "status": "fail",
+        "code": "200",
+        "message": "The item does not exist"
+    }
+```
+2- POST -  HTTP Response Code: **400**
+```javascript
+    HTTP/1.1  400
+    Content-Type: application/json
+    
+    {
+        "message": "Validation errors in your request", /* skip or optional error message */
+        "errors": [
+            {
+                "message": "Oops! The value is invalid",
+                "code": 34,
+                "field": "email"
+            },
+            {
+                "message": "Oops! The format is not correct",
+                "code": 35,
+                "field": "phoneNumber"
+            }
+        ]
+    }
+```
