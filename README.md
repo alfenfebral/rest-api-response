@@ -14,10 +14,10 @@ Rest API Response
 
     {
         "status": 'success',
+        "code": "200",
         "data": {
             "name": "John Doe"
-        },
-        "code": "200"
+        }
     }
 ```
 2- GET - Get item list pagination - HTTP Response Code: **200**
@@ -28,6 +28,8 @@ Rest API Response
     Content-Type: application/json
     
     {
+        "status": 'success',
+        "code": "200",
         "meta": {
             "current_page": 1,
             "per_page": 2,
