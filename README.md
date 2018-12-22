@@ -16,7 +16,7 @@ Rest API Response
         "status": "success",
         "code": "200",
         "data": {
-            "name": "John Doe"
+            "name": "Item 1"
         }
     }
 ```
@@ -38,10 +38,10 @@ Rest API Response
         },
         "data": [
             {
-                "name": "John Doe"
+                "name": "Item 1"
             },
             {
-                "name": "John Smith"
+                "name": "Item 2"
             }
         ]
     }
@@ -54,7 +54,23 @@ Rest API Response
  
     {
         "status": "success",
-        "code": "200",
+        "code": "201",
         "message": "The item was created successfully"
+    }
+```
+4- PATCH - Update an item - HTTP Response Code: **200/204** 
+
+> If updated entity is to be sent after the update
+
+```javascript
+    HTTP/1.1  200
+    Content-Type: application/json
+ 
+    {
+        "status": "success",
+        "code": "200",
+        "data": {
+            "name": "Item 1"
+        }
     }
 ```
