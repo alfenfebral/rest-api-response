@@ -31,10 +31,10 @@ Rest API Response
         "status": 'success',
         "code": "200",
         "meta": {
-            "current_page": 1,
             "per_page": 2,
-            "total_page" 10,
-            "total_data": 20
+            "page": 1,
+            "page_count" 10,
+            "total_count": 20
         },
         "data": [
             {
