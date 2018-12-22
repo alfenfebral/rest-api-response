@@ -109,18 +109,11 @@ Rest API Response
         "status": "error",
         "code": "400",
         "message": "Validation errors in your request", /* skip or optional error message */
-        "errors": [
-            {
-                "message": "Oops! The value is invalid",
-                "code": 34,
-                "field": "email"
-            },
-            {
-                "message": "Oops! The format is not correct",
-                "code": 35,
-                "field": "phoneNumber"
-            }
-        ]
+        "errors": {
+            "name": [
+                "Name can't be blank"
+            ]
+        }
     }
 ```
 3- VERB Unauthorized - HTTP Response Code: **401**
