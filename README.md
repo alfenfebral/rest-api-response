@@ -34,6 +34,7 @@ Rest API Response
             "current_page": 1,
             "per_page": 2,
             "total_page" 10,
+            "total_data": 20
         },
         "data": [
             {
