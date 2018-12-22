@@ -20,3 +20,26 @@ Rest API Response
         "code": "200"
     }
 ```
+2- GET - Get item list pagination - HTTP Response Code: **200**
+```javascript
+    HTTP/1.1 200
+    per_page: 2
+    page: 1
+    Content-Type: application/json
+    
+    {
+        "meta": {
+            "current_page": 1,
+            "per_page": 2,
+            "total_page" 10,
+        },
+        "data": [
+            {
+                "name": "John Doe"
+            },
+            {
+                "name": "John Smith"
+            }
+        ]
+    }
+```
