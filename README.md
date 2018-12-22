@@ -13,7 +13,7 @@ Rest API Response
     Content-Type: application/json
 
     {
-        "status": 'success',
+        "status": "success",
         "code": "200",
         "data": {
             "name": "John Doe"
@@ -28,7 +28,7 @@ Rest API Response
     Content-Type: application/json
     
     {
-        "status": 'success',
+        "status": "success",
         "code": "200",
         "meta": {
             "per_page": 2,
