@@ -13,9 +13,10 @@ Rest API Response
     Content-Type: application/json
 
     {
-        "id": 10,
-        "name": "shirt",
-        "color": "red",
-        "price": "$23"
+        "status": 'success',
+        "data": {
+            "name": "John Doe"
+        },
+        "code": "200"
     }
 ```
