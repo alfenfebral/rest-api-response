@@ -14,7 +14,7 @@ Rest API Response
 
     {
         "status": "success",
-        "code": "200",
+        "code": 200,
         "data": {
             "name": "Item 1"
         }
@@ -29,7 +29,7 @@ Rest API Response
     
     {
         "status": "success",
-        "code": "200",
+        "code": 200,
         "meta": {
             "per_page": 2,
             "page": 1,
@@ -54,7 +54,7 @@ Rest API Response
  
     {
         "status": "success",
-        "code": "201",
+        "code": 201,
         "message": "The item was created successfully"
     }
 ```
@@ -68,7 +68,7 @@ Rest API Response
  
     {
         "status": "success",
-        "code": "200",
+        "code": 200,
         "message": "The item was updated successfully"
         "data": {
             "name": "Item 1"
@@ -82,7 +82,7 @@ Rest API Response
  
     {
         "status": "success",
-        "code": "200",
+        "code": 200,
         "message": "The item was deleted successfully"
     }
 ```
@@ -96,7 +96,7 @@ Rest API Response
  
     {
         "status": "error",
-        "code": "404",
+        "code": 404,
         "message": "The item does not exist"
     }
 ```
@@ -107,7 +107,7 @@ Rest API Response
     
     {
         "status": "error",
-        "code": "400",
+        "code": 400,
         "message": "Validation errors in your request", /* skip or optional error message */
         "errors": {
             "name": [
@@ -123,7 +123,7 @@ Rest API Response
  
     {
         "status": "error",
-        "code": "401",
+        "code": 401,
         "message": "Authentication credentials were missing or incorrect"
     }
 ```
@@ -134,7 +134,7 @@ Rest API Response
  
     {
         "status": "error",
-        "code": "401",
+        "code": 401,
         "message": "The request is understood, but it has been refused or access is not allowed"
     }
 ```
@@ -145,7 +145,7 @@ Rest API Response
  
     {
         "status": "error",
-        "code": "409",
+        "code": 409,
         "message": "Any message which should help the user to resolve the conflict"
     }
 ```
@@ -156,7 +156,7 @@ Rest API Response
  
     {
         "status": "error",
-        "code": "429",
+        "code": 429,
         "message": "The request cannot be served due to the rate limit having been exhausted for the resource"
     }
 ```
@@ -167,7 +167,7 @@ Rest API Response
  
     {
         "status": "error",
-        "code": "500",
+        "code": 500,
         "message": "Something is broken"
     }
 ```
@@ -178,7 +178,7 @@ Rest API Response
  
     {
         "status": "error",
-        "code": "503",
+        "code": 503,
         "message": "The server is up, but overloaded with requests. Try again later!"
     }
 ```
