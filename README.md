@@ -57,6 +57,7 @@ Rest API Response
     {
         "success": true,
         "code": 201,
+        "message": "Create Item",
         "data": {
             "name": "Item 1"
         },
@@ -74,6 +75,7 @@ Rest API Response
     {
         "success": true,
         "code": 200,
+        "message": "Update Item",
         "message": "The item was updated successfully"
         "data": {
             "name": "Item 1"
@@ -88,6 +90,7 @@ Rest API Response
     {
         "success": true,
         "code": 200,
+        "message": "Delete Item",
         "data": {
             "name": "Item 1"
         },
