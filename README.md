@@ -13,7 +13,7 @@ Rest API Response
     Content-Type: application/json
 
     {
-        "status": "success",
+        "success": true,
         "code": 200,
         "data": {
             "name": "Item 1"
@@ -28,13 +28,13 @@ Rest API Response
     Content-Type: application/json
     
     {
-        "status": "success",
+        "success": true,
         "code": 200,
         "meta": {
             "per_page": 2,
             "page": 1,
-            "page_count" 10,
-            "total_count": 20
+            "pageCount" 10,
+            "totalCount": 20
         },
         "data": [
             {
@@ -53,7 +53,7 @@ Rest API Response
     Content-Type: application/json
  
     {
-        "status": "success",
+        "success": true,
         "code": 201,
         "message": "The item was created successfully"
     }
@@ -67,7 +67,7 @@ Rest API Response
     Content-Type: application/json
  
     {
-        "status": "success",
+        "success": true,
         "code": 200,
         "message": "The item was updated successfully"
         "data": {
@@ -81,7 +81,7 @@ Rest API Response
     Content-Type: application/json
  
     {
-        "status": "success",
+        "success": true,
         "code": 200,
         "message": "The item was deleted successfully"
     }
@@ -95,7 +95,7 @@ Rest API Response
     Content-Type: application/json
  
     {
-        "status": "error",
+        "success": false,
         "code": 404,
         "message": "The item does not exist"
     }
@@ -106,7 +106,7 @@ Rest API Response
     Content-Type: application/json
     
     {
-        "status": "error",
+        "success": false,
         "code": 400,
         "message": "Validation errors in your request", /* skip or optional error message */
         "errors": {
@@ -122,7 +122,7 @@ Rest API Response
     Content-Type: application/json
  
     {
-        "status": "error",
+        "success": false,
         "code": 401,
         "message": "Authentication credentials were missing or incorrect"
     }
@@ -133,7 +133,7 @@ Rest API Response
     Content-Type: application/json
  
     {
-        "status": "error",
+        "success": false,
         "code": 401,
         "message": "The request is understood, but it has been refused or access is not allowed"
     }
@@ -144,7 +144,7 @@ Rest API Response
     Content-Type: application/json
  
     {
-        "status": "error",
+        "success": false,
         "code": 409,
         "message": "Any message which should help the user to resolve the conflict"
     }
@@ -155,7 +155,7 @@ Rest API Response
     Content-Type: application/json
  
     {
-        "status": "error",
+        "success": false,
         "code": 429,
         "message": "The request cannot be served due to the rate limit having been exhausted for the resource"
     }
@@ -166,7 +166,7 @@ Rest API Response
     Content-Type: application/json
  
     {
-        "status": "error",
+        "success": false,
         "code": 500,
         "message": "Something is broken"
     }
@@ -177,7 +177,7 @@ Rest API Response
     Content-Type: application/json
  
     {
-        "status": "error",
+        "success": false,
         "code": 503,
         "message": "The server is up, but overloaded with requests. Try again later!"
     }
