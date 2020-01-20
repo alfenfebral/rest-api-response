@@ -31,7 +31,7 @@ Rest API Response
         "success": true,
         "code": 200,
         "meta": {
-            "per_page": 2,
+            "perPage": 2,
             "page": 1,
             "pageCount" 10,
             "totalCount": 20
