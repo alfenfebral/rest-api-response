@@ -15,6 +15,7 @@ Rest API Response
     {
         "success": true,
         "code": 200,
+        "message": "Get Item",
         "data": {
             "name": "Item 1"
         }
@@ -36,6 +37,7 @@ Rest API Response
             "pageCount" 10,
             "totalCount": 20
         },
+        "message": "Get All User",
         "data": [
             {
                 "name": "Item 1"
