@@ -143,7 +143,7 @@ Rest API Response
  
     {
         "success": false,
-        "code": 401,
+        "code": 403,
         "data": "",
         "message": "The request is understood, but it has been refused or access is not allowed"
     }
