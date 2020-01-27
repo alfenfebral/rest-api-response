@@ -123,9 +123,7 @@ Rest API Response
         "data": "",
         "message": "Validation errors in your request", /* skip or optional error message */
         "errors": {
-            "name": [
-                "Name can't be blank"
-            ]
+            "name": "Name can't be blank"
         }
     }
 ```
