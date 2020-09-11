@@ -76,7 +76,6 @@ Rest API Response
         "success": true,
         "code": 200,
         "message": "Update Item",
-        "message": "The item was updated successfully"
         "data": {
             "name": "Item 1"
         }
@@ -94,7 +93,6 @@ Rest API Response
         "data": {
             "name": "Item 1"
         },
-        "message": "The item was deleted successfully"
     }
 ```
 
