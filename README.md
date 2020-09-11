@@ -4,7 +4,7 @@ Rest API Response
 ## Rest API Popular Endpoint Formats
 
 > https://example.com/api/items/v1
-
+> https://example.com/v1/api/items
 ## Rest API Success Responses
 
 1- GET - Get single item - HTTP Response Code: **200**
