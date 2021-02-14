@@ -35,7 +35,7 @@ Rest API Response
         "meta": {
             "perPage": 2,
             "page": 1,
-            "pageCount" 10,
+            "pageCount": 10,
             "totalCount": 20
         },
         "message": "Get All User",
