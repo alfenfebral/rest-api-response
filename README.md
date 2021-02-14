@@ -194,7 +194,7 @@ Rest API Response
     {
         "success": false,
         "code": 503,
-        "data": null.
+        "data": null,
         "message": "The server is up, but overloaded with requests. Try again later!"
     }
 ```
