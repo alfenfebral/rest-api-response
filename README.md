@@ -107,7 +107,7 @@ Rest API Response
     {
         "success": false,
         "code": 404,
-        "data": "",
+        "data": null,
         "message": "The item does not exist"
     }
 ```
@@ -119,7 +119,7 @@ Rest API Response
     {
         "success": false,
         "code": 400,
-        "data": "",
+        "data": null,
         "message": "Validation errors in your request", /* skip or optional error message */
         "errors": {
             "name": "Name can't be blank"
@@ -134,7 +134,7 @@ Rest API Response
     {
         "success": false,
         "code": 401,
-        "data": "",
+        "data": null,
         "message": "Authentication credentials were missing or incorrect"
     }
 ```
@@ -146,7 +146,7 @@ Rest API Response
     {
         "success": false,
         "code": 403,
-        "data": "",
+        "data": null,
         "message": "The request is understood, but it has been refused or access is not allowed"
     }
 ```
@@ -158,7 +158,7 @@ Rest API Response
     {
         "success": false,
         "code": 409,
-        "data": "".
+        "data": null.
         "message": "Any message which should help the user to resolve the conflict"
     }
 ```
@@ -170,7 +170,7 @@ Rest API Response
     {
         "success": false,
         "code": 429,
-        "data": "".
+        "data": null.
         "message": "The request cannot be served due to the rate limit having been exhausted for the resource"
     }
 ```
@@ -182,7 +182,7 @@ Rest API Response
     {
         "success": false,
         "code": 500,
-        "data": "",
+        "data": null,
         "message": "Something is broken"
     }
 ```
@@ -194,7 +194,7 @@ Rest API Response
     {
         "success": false,
         "code": 503,
-        "data": "".
+        "data": null.
         "message": "The server is up, but overloaded with requests. Try again later!"
     }
 ```
