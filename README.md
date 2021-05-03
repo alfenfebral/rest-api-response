@@ -64,7 +64,7 @@ Rest API Response
         }
     }
 ```
-4- PATCH - Update an item - HTTP Response Code: **200** 
+4- PUT/PATCH - Update an item - HTTP Response Code: **200** 
 
 > If updated entity is to be sent after the update
 
