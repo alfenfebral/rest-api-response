@@ -61,8 +61,7 @@ Rest API Response
         "message": "Create Item",
         "data": {
             "name": "Item 1"
-        },
-        "message": "The item was created successfully"
+        }
     }
 ```
 4- PATCH - Update an item - HTTP Response Code: **200** 
