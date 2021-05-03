@@ -97,7 +97,7 @@ Rest API Response
 ```
 
 ## Rest API Error Responses
-1- GET/DELETE - HTTP Response Code: **404**
+1- GET/PUT/PATCH/DELETE - HTTP Response Code: **404**
 
 ```javascript
     HTTP/1.1  404
